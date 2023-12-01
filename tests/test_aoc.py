@@ -10,16 +10,14 @@ HERE = Path(__file__).parent
 
 
 @mark.parametrize(
-    argnames=['p1f', 'p2f', 'mod', 'part1', 'part2'],
+    argnames=['file', 'fn', 'expected'],
     argvalues=[
-        ('day1p1', 'day1p2', aoc2023.day1, 142, 281+83+79),
+        # Put the most recent at the top to help speed things up.
+        ('d1p2', aoc2023.day1.part2, 281+83+79),
+        ('d1p1', aoc2023.day1.part2, 142),
     ]
 )
-def test_part_1(p1f, p2f, mod, part1, part2):
-    with open(Path(HERE, 'inputs', p1f)) as f:
+def test_part_1(file: str, fn, expected: int) -> None:
+    with open(Path(HERE, 'inputs', file)) as f:
         data = f.read()
-    assert mod.part1(data) == part1
-
-    with open(Path(HERE, 'inputs', p2f)) as f:
-        data = f.read()
-    assert mod.part2(data) == part2
+    assert fn(data) == expected
