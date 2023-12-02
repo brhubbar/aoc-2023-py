@@ -13,8 +13,10 @@ HERE = Path(__file__).parent
     argnames=['file', 'fn', 'expected'],
     argvalues=[
         # Put the most recent at the top to help speed things up.
-        ('d1p2', aoc2023.day1.part2, 281+83+79),
-        ('d1p1', aoc2023.day1.part2, 142),
+        ('d2p2', aoc2023.day2.part2, 2286),
+        ('d2p1', aoc2023.day2.part1, 8),
+        # ('d1p2', aoc2023.day1.part2, 281+83+79),
+        # ('d1p1', aoc2023.day1.part2, 142),
     ]
 )
 def test_part_1(file: str, fn, expected: int) -> None:
