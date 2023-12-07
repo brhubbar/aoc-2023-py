@@ -5,6 +5,7 @@ from aoc2023 import (
     day4,
     day5,
     day6,
+    day7,
 )
 
 __all__ = [
@@ -14,4 +15,5 @@ __all__ = [
     day4,
     day5,
     day6,
+    day7,
 ]
