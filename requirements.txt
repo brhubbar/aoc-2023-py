@@ -1,1 +1,5 @@
 -e .[dev]
+cycler
+matplotlib
+pandas
+pyside6
