@@ -13,9 +13,13 @@ HERE = Path(__file__).parent
     argnames=['file', 'fn', 'expected'],
     argvalues=[
         # Put the most recent at the top to help speed things up.
-        ('d11', aoc2023.day11.part2, 8410),
-        ('d11', aoc2023.day11.part2, 1030),
-        ('d11', aoc2023.day11.part1, 374),
+        # ('d13', aoc2023.day13.part2, 400),
+        # ('d13', aoc2023.day13.part1, 405),
+        ('d12', aoc2023.day12.part2, 525152),
+        ('d12', aoc2023.day12.part1, 21),
+        # ('d11', aoc2023.day11.part2, 8410),
+        # ('d11', aoc2023.day11.part2, 1030),
+        # ('d11', aoc2023.day11.part1, 374),
         # ('d10_5', aoc2023.day10.part2, 10),
         # ('d10_4', aoc2023.day10.part2, 8),
         # ('d10_3', aoc2023.day10.part2, 4),
@@ -42,7 +46,7 @@ HERE = Path(__file__).parent
         # ('d1p1', aoc2023.day1.part2, 142),
     ]
 )
-def test_part_1(file: str, fn, expected: int) -> None:
+def test_part(file: str, fn, expected: int) -> None:
     with open(Path(HERE, 'inputs', file)) as f:
         data = f.read()
     assert fn(data) == expected
