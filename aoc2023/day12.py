@@ -112,7 +112,7 @@ def count_arrangements(springs: str, is_damaged_list: list[bool]) -> int:
                 n_arrangements = 0
             n_arrangements_from_idx_to_end[last_expect_idx+1][last_spring_idx+1] = n_arrangements
     # for list_ in n_arrangements_from_idx_to_end:
-    print(n_arrangements_from_idx_to_end[-1][-1])
+    # print(n_arrangements_from_idx_to_end[-1][-1])
     return n_arrangements_from_idx_to_end[-1][-1]
 
 
