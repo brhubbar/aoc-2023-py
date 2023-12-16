@@ -13,6 +13,8 @@ from aoc2023 import (
     day12,
     day13,
     day14,
+    day15,
+    day16,
 )
 
 __all__ = [
@@ -30,4 +32,6 @@ __all__ = [
     day12,
     day13,
     day14,
+    day15,
+    day16,
 ]

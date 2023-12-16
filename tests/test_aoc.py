@@ -13,8 +13,13 @@ HERE = Path(__file__).parent
     argnames=['file', 'fn', 'expected'],
     argvalues=[
         # Put the most recent at the top to help speed things up.
-        ('d14', aoc2023.day14.part2, 64),
-        ('d14', aoc2023.day14.part1, 136),
+        ('d16', aoc2023.day16.part2, 51),
+        ('d16', aoc2023.day16.part1, 46),
+        # ('d15_2', aoc2023.day15.part2, 145),
+        # ('d15_2', aoc2023.day15.part1, 1320),
+        # ('d15_1', aoc2023.day15.part1, 52),
+        # ('d14', aoc2023.day14.part2, 64),
+        # ('d14', aoc2023.day14.part1, 136),
         # ('d13', aoc2023.day13.part2, 400),
         # ('d13', aoc2023.day13.part1, 405),
         # ('d12', aoc2023.day12.part2, 525152),

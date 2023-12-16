@@ -128,7 +128,7 @@ for member in members:
             # nan
             x_vals.append(ts)
     ax.plot(x_vals, df['Score'], label=member)
-ax.legend()
+# ax.legend()
 ax.set_xlabel("Collective star earned")
 ax.set_ylabel("Player cumulative score")
 plt.show()
