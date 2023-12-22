@@ -1,0 +1,40 @@
+# Extensions:
+# flake8-annotations
+# flake8-docstrings
+
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    env,
+    ui_*,
+    tests,
+    libraries,
+max-complexity = 10
+max-line-length = 88
+ignore =
+    # [flake8-annotations](https://pypi.org/project/flake8-annotations/)
+    # Only warn about return type on public functions/methods.
+    ANN001,
+    ANN002,
+    ANN003,
+    ANN101,
+    ANN102,
+    ANN202,
+    ANN203,
+    ANN204,
+    ANN301,
+    # PEP8 is less strict about this, and even suggests not following in favor
+    # of readability (emphasis by spaces).
+    E226,
+    # This is an invalid requirement.
+    D203,
+    # Multiline dosctrings should start on the second line. This disagrees.
+    D212,
+    # __init__ docstring goes in the class docstring
+    D107,
+    # PEP8 now specifies for readability that code conform with W504 (the
+    # opposite of this).
+    W503,
+# docstrings
+docstring-convention=all
