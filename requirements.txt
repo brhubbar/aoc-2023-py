@@ -3,3 +3,7 @@ cycler
 matplotlib
 pandas
 pyside6
+numpy
+scipy
+ipython
+z3-solver

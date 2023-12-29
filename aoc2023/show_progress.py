@@ -42,7 +42,7 @@ for member in player_stats.values():
 pprint.pp(simple_stats)
 
 members = [member['name'] for member in simple_stats]
-members.sort()
+members.sort(key=str.casefold)
 
 # Print sum of stars over time.
 simpler_stats = {}
@@ -52,7 +52,7 @@ ax.set_prop_cycle(
     cycler(linestyle=['-', '--'], marker=['*', '*'])
     * cycler(color=['b', 'g', 'r', 'c', 'm', 'y', 'k'])
 )
-simple_stats.sort(key=lambda x: x['name'])
+simple_stats.sort(key=lambda x: x['name'].casefold())
 for member in simple_stats:
     stars = []
     for timestamps in member['stars'].values():

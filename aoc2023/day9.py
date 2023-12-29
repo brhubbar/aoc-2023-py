@@ -55,6 +55,8 @@ def calc_diff(series: list[int]) -> list[int]:
 
 def extrapolate(series: list[int], diff: list[int]) -> int:
     """Return the next point in series based on diff."""
+    if not diff:
+        breakpoint()
     return series[-1] + diff[-1]
 
 
