@@ -15,8 +15,10 @@ HERE = Path(__file__).parent
         # Put the most recent at the top to help speed things up.
         # ('d24', aoc2023.day24.part2, 47),
         # ('d24', aoc2023.day24.part1, 2),
-        ('d22', aoc2023.day22.part2, 7),
-        ('d22', aoc2023.day22.part1, 5),
+        ('d23', aoc2023.day23.part2, 154),
+        ('d23', aoc2023.day23.part1, 94),
+        # ('d22', aoc2023.day22.part2, 7),
+        # ('d22', aoc2023.day22.part1, 5),
         # ('d21', aoc2023.day21.part2, 16733044),
         # ('d21', aoc2023.day21.part2, 167004),
         # ('d21', aoc2023.day21.part2, 1594),
